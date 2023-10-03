@@ -168,7 +168,43 @@ void task4()
 
 }
 
+/*
+Napisz program/ funkcję która dla tablicy z liczbami pseudolosowymi policzy średnią arytmetyczną tych liczb
+*/
+
+void task5()
+{
+	const int rozmiar_tablicy = 5;
+	int tablica[rozmiar_tablicy];
+	int suma = 0;
+
+	std::cout << "Podaj 5 liczb: ";
+	for (int i = 0; i < rozmiar_tablicy; ++i)
+	{
+		std::cin >> tablica[i];
+		suma += tablica[i];
+	}
+
+	double srednia = static_cast<double>(suma) / rozmiar_tablicy;
+	
+	std::cout << "liczby w tablicy: ";
+	for (int i = 0; i < rozmiar_tablicy; ++i)
+	{
+		std::cout << tablica[i] << " ";
+	}
+	std::cout << "Srednia arytmetyczna: " << srednia;
+		std::cout << "\n";
+}
+
+/*
+* Napisz funkcję, która dla kolekcji danych liczbowych policzy ile jest liczb większych od średniej arytmetycznej.
+* Napisz funkcje, która dla kolekcji danych liczbowych przeniesie te liczby do innej kolekcji w odwrotnej kolejności.
+* Napisz funkcje, która dla kolekcji danych liczbowych obliczy częstotliwość występowania danej liczby.
+* Napisz funkcję, która dla kolekcji danych liczbowych znajdzie najdłuższy rosnący podciąg.
+* Napisz funkcję, która dla kolekcji danych liczbowych przeniesie te liczby do osobnych kolekcji liczb parzystych i nieparzystych.
+*/
+
 int main()
 {
-	task4();
+	//task4();
 }
